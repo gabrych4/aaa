@@ -29,6 +29,7 @@ margin: 0px;
 
 section{
   padding: 70px, 0;
+  overflow: hidden;
 }
 .container {
   max-width: 100%;
@@ -365,6 +366,22 @@ figcaption {
 }
 
 /* section quote */
+
+#quote{
+  position: relative;
+}
+
+#quote::before {
+  position: absolute;
+  top: 40px;
+  right:-130px;
+  content: '' ;
+  border-radius: 250px;
+  width: 500px;
+  height: 500px;
+  background-color: #e2a1bc;
+}
+
 .quote-wrapper {
   display: flex;
   align-items: center;
@@ -373,6 +390,7 @@ figcaption {
 
 blockquote {
   max-width: 80%;
+  z-index: 0;
 }
 
 .quote-text {
