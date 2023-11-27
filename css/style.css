@@ -86,7 +86,7 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 60px;
   margin-left: 30px;
   color: #fff;
   
@@ -94,6 +94,10 @@ header {
 .menu-list {
   display: none;
   list-style: none;
+}
+
+.menu-list li{
+  margin-bottom: 12px;
 }
 
 .menu-list-link{
@@ -127,6 +131,30 @@ header {
   margin-top: 150px;
 }
 
+.close-menu svg{
+  width: 40px;
+  height: 40px;
+ 
+}
+
+.close-menu{
+  display: none;
+}
+
+.opened{
+  display: block;
+
+}
+
+.hidden{
+  display: none;
+}
+
+nav{
+  text-align: right;
+  
+}
+
 .header-button:hover{
   background-color: #e2a1bc;
   margin-top: 30px;
@@ -135,11 +163,11 @@ header {
 
 .logo-img{
   position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70%;
-    fill: #fff;
+  top: 50%;
+ left: 50%;
+ width: 70px;
+  height: 70%;
+   fill: #fff;
 }
 
 .section-dark {
@@ -150,15 +178,28 @@ header {
   color: #b50e91;
 }
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .menu {
+    margin-bottom: 150px;
+  }
+
   .menu-list {
     display: flex;
     gap: 20px;
   }
+
   .burger-menu {
     display: none;
   }
-} 
+}
 
 /* Section about */
 
